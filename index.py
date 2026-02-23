@@ -1,2 +1,3 @@
-angka = [1,2,3,4,5,6]
-print(angka.index(4))
+tuple_x = (10,20,30,40,50)
+print("index(20):",tuple_x.index(30))
+output:
