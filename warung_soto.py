@@ -1,22 +1,18 @@
-class MieAyam:
+class warung_soto: 
     def __init__(self):
-        self.orders = []
+        self.mangkuk = []
     
-    def add(self, item):
-        self.orders.append(item)
+    def tambah_pesanan(self, item):
+        self.mangkuk.append(item)
     
-    def remove(self):
+    def hidangkan(self):
         if not self.is_empty():
-            return self.orders.pop(0)
-        return "mie habis"
+            return self.mangkuk.pop() 
+        return "soto habis"
     
-    def peek(self):
+    def cek_paling_atas(self):
         if not self.is_empty():
-            return self.orders[0]
+            return self.mangkuk[-1]
         
     def is_empty(self):
-        return len(self.orders) == 0
-
-    def size(self):
-        return len(self.orders)
-    
+        return len(self.mangkuk) == 0
